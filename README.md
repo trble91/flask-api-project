@@ -32,6 +32,7 @@ def endpoint(id=None):
 
 Once the file has been seeded and accessed in postgresql it should appear like the image below:
 
+![ALT](/seed%20data%20image.png)
 
 
 Please free to comment and/or commit. Something my wife used to say :()
