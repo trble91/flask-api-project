@@ -1,7 +1,8 @@
 # Flask-api-Project'
 
-### Songs
 This was a mini project, designed to guide us through building an api. This is a RESTful api using CRUD functionality.
+
+### Song Schema
 
 ``` py
 Song(song_name='Space & Time', artist_name='TRBLE', track_time=180, album='Social Studies').save()
@@ -26,5 +27,11 @@ def endpoint(id=None):
     new_song.save()
     return jsonify({'Success': True}) 
 ```
+
+### Seed
+
+Once the file has been seeded and accessed in postgresql it should appear like the image below:
+
+
 
 Please free to comment and/or commit. Something my wife used to say :()
