@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route('/Song/', methods=['GET', 'POST'])
 @app.route('/Song/<id>', methods=['GET', 'PUT', 'DELETE'])
 def endpoint(id=None):
-  if request.method == 'GET':
+  if request.method == 'GET':q
     if id: 
        return jsonify(model_to_dict(Song.get(Song.id == id)))
     else:
