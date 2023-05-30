@@ -11,9 +11,12 @@ class BaseModel(Model):
 class Song(BaseModel):
   song_name = CharField()
   artist_name = CharField()
-  track_time = IntegerField() # In seconds 
+  track_time = IntegerField() #In seconds 
   album = CharField()
 
+class Album(BaseModel):
+    artist_name = CharField()
+    album = CharField()
 
 db.connect()
 db.drop_tables([Song])
@@ -21,6 +24,9 @@ db.create_tables([Song])
 
 Song(song_name='Space & Time', artist_name='TRBLE', track_time=180, album='Social Studies').save()
 Song(song_name='FameMiss', artist_name='TRBLE', track_time=135, album='3:20').save()
+
+Album(artist_name='TRBLE', album='Social Studies').save()
+Album(artist_name='TRBLE', album='3:20').save()
 
 app = Flask(__name__)
 
