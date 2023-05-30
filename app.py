@@ -11,22 +11,24 @@ class BaseModel(Model):
 class Song(BaseModel):
   song_name = CharField()
   artist_name = CharField()
-  track_time = IntegerField() #In seconds 
   album = CharField()
-
-class Album(BaseModel):
-    artist_name = CharField()
-    album = CharField()
+  irsc = CharField()
 
 db.connect()
 db.drop_tables([Song])
 db.create_tables([Song])
 
-Song(song_name='Space & Time', artist_name='TRBLE', track_time=180, album='Social Studies').save()
-Song(song_name='FameMiss', artist_name='TRBLE', track_time=135, album='3:20').save()
+Song(song_name='SHAQ', artist_name='TRBLE', album='3:20', irsc= 'QZDA51930843').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='3:20', irsc= 'QZDA51930842').save()
+Song(song_name='Onto Something', artist_name='TRBLE', album='Onto Something', irsc= 'QZMWW2053469').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
+Song(song_name='FameMiss', artist_name='TRBLE', album='Social Studies', irsc= '').save()
 
-Album(artist_name='TRBLE', album='Social Studies').save()
-Album(artist_name='TRBLE', album='3:20').save()
 
 app = Flask(__name__)
 
