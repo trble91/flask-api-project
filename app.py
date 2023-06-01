@@ -75,13 +75,20 @@ def endpoint(id=None):
 def index():
   return 'I love music!'
 
-@app.route('/')
+@app.route('/song/id')
 def index():
-  return 'I love music!'
+  return 
 
-@app.route('/')
-def index():
-  return 'I love music!'
+@app.route('/Song/<id>', methods=['GET', 'PUT', 'DELETE'])
+def index(id=None):
+  if request.method == 'GET':
+    if id: 
+       return jsonify(model_to_dict(Song.get(Song.id == id)))
+    else:
+      song_list = []
+      for song in Song.select():
+        song_list.append(model_to_dict(song))
+      return jsonify(song_list)
 
 @app.route('/')
 def index():
