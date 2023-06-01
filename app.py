@@ -74,15 +74,19 @@ def endpoint(id=None):
 @app.route('/')
 def index():
   return 'I love music!'
+
 @app.route('/')
 def index():
   return 'I love music!'
+
 @app.route('/')
 def index():
   return 'I love music!'
+
 @app.route('/')
 def index():
   return 'I love music!'
+
 @app.route('/')
 def index():
   return 'I love music!'
