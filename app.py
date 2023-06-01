@@ -73,11 +73,7 @@ def endpoint(id=None):
     
 @app.route('/')
 def index():
-  return 'I love music!'
-
-@app.route('/song/<id>')
-def index():
-  return 
+  return 'I love music!' 
 
 @app.route('/Song/<id>', methods=['GET', 'PUT', 'DELETE'])
 def index(id=None):
