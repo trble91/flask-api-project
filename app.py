@@ -38,9 +38,10 @@ Song(song_name='Untitled Changes', artist_name='TRBLE', album='The Lost Baker-EP
 Song(song_name='Karma', artist_name='TRBLE', album='The Lost Baker-EP', irsc= 'QZDA51929543').save()
 Song(song_name='Check', artist_name='TRBLE', album='Check-Single', irsc= 'QZFZ52191493').save()
 Song(song_name='Dear Father', artist_name='TRBLE', album='Dear Father-Single', irsc= 'QZNB82092242').save()
-Song(song_name='Tht Side', artist_name='TRBLE', album='Tht Side-Single', irsc= '').save()
-Song(song_name='Bad Guy', artist_name='TRBLE', album='Bad Guy-Single', irsc= '').save()
-Song(song_name='Love Me', artist_name='TRBLE', album='Love Me-Single', irsc= '').save()
+Song(song_name='Tht Side', artist_name='TRBLE', album='Tht Side-Single', irsc= 'QZNMU2285942').save()
+Song(song_name='Bad Guy', artist_name='TRBLE', album='Bad Guy-Single', irsc= 'QZNMV2251067').save()
+Song(song_name='Bad Guy (Alternate Version)', artist_name='TRBLE', album='Bad Guy (Alternate Version)-Single', irsc= 'QZNMV2289039').save()
+Song(song_name='Love Me', artist_name='TRBLE', album='Love Me-Single', irsc= 'QZNMX2247738').save()
 
 
 app = Flask(__name__)
