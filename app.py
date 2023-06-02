@@ -66,11 +66,11 @@ def endpoint(id=None):
   if request.method == 'PUT':
     body = request.get_json()
     Song.update(body).where(Song.id == id).execute()
-    return "Song " + str(id) + " has been updated."
+    return f"Song " + str(id) + " has been updated."
   
   if request.method == 'DELETE':
     Song.delete().where(Song.id == id).execute()
-    return "Song " + str(id) + " has been deleted."
+    return f"Song " + str(id) + " has been deleted."
     
 @app.route('/')
 def index():
