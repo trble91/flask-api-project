@@ -1,6 +1,8 @@
-# Flask-api-Project
+# TRBLE™ 
+---
+## SongDatabase - Flask API
 
-A project, designed to build an api. This is a RESTful api using CRUD functionality.
+A project designed to house artist information for personal upkeeping. This is a RESTful API using CRUD functionality.
 
 ### Song Schema
 
