@@ -8,16 +8,11 @@ class BaseModel(Model):
   class Meta:
     database = db
 
-class Album(BaseModel):
-  album_name = CharField()
-  artist_name = CharField()
-
 class Song(BaseModel):
   song_name = CharField()
   artist_name = CharField()
   album = CharField()
   irsc = CharField()
-
 
 db.connect()
 db.drop_tables([Song])
