@@ -1,6 +1,6 @@
 # Flask-api-Project
 
-This was a mini project, designed to guide us through building an api. This is a RESTful api using CRUD functionality.
+A project, designed to build an api. This is a RESTful api using CRUD functionality.
 
 ### Song Schema
 
@@ -35,4 +35,4 @@ Once the file has been seeded and accessed in postgresql it should appear like t
 ![ALT](/seed%20data%20update.png)
 
 
-Please free to comment and/or commit. Something my wife used to say :()
+
