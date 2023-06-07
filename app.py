@@ -8,11 +8,16 @@ class BaseModel(Model):
   class Meta:
     database = db
 
+class Album(BaseModel):
+  album_name = CharField()
+  artist_name = CharField()
+
 class Song(BaseModel):
   song_name = CharField()
   artist_name = CharField()
   album = CharField()
   irsc = CharField()
+
 
 db.connect()
 db.drop_tables([Song])
@@ -46,8 +51,8 @@ Song(song_name='Love Me', artist_name='TRBLE', album='Love Me-Single', irsc= 'QZ
 
 app = Flask(__name__)
 
-@app.route('/Song/', methods=['GET', 'POST'])
-@app.route('/Song/<id>', methods=['GET', 'PUT', 'DELETE'])
+@app.route('/song/', methods=['GET', 'POST'])
+@app.route('/song/<id>', methods=['GET', 'PUT', 'DELETE'])
 def endpoint(id=None):
   if request.method == 'GET':
     if id: 
