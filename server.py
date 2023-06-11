@@ -45,7 +45,7 @@ Song(song_name='Love Me', artist_name='TRBLE', album='Love Me-Single', irsc= 'QZ
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 
+# app.config['SECRET_KEY'] = 
 
 @app.route('/song/', methods=['GET', 'POST'])
 @app.route('/song/<id>', methods=['GET', 'PUT', 'DELETE'])
