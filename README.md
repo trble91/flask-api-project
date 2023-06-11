@@ -30,7 +30,7 @@ def endpoint(id=None):
     return jsonify({'Success': True}) 
 ```
 
-### Seed
+### Seed 
 
 Once the file has been seeded and accessed in postgresql it should appear like the image below:
 
